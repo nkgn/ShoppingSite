@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testscripts.UserSignUp">
+        <methods>
+          <include name="signUp"/>
+        </methods>
+      </class> <!-- testscripts.UserSignUp -->
+      <class name="testscripts.PurchaseComputer">
+        <methods>
+          <include name="purchase"/>
+        </methods>
+      </class> <!-- testscripts.PurchaseComputer -->
+      <class name="testscripts.RegisterNewUser">
+        <methods>
+          <include name="registerSingleUser"/>
+          <include name="registerUser"/>
+        </methods>
+      </class> <!-- testscripts.RegisterNewUser -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
