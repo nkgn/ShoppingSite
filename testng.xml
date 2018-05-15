@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="project">
+<test name="OnlineShopping">
+		<classes>
+			<class name="testscripts.ShoppingSite">
+				<methods>
+					<exclude name="registerUser" />
+					<exclude name="signUp" />
+					<exclude name="purchase" />
+				</methods>
+			</class>
+	
+	<class name="testscripts.RegisterNewUser">
+				<methods>
+					<include name="registerUser" />
+					
+				</methods>
+			</class>
+	
+    
+    
+	<!-- test name="OnlineShopping">
+		<classes>
+			<class name="testscripts.ShoppingSite">
+				<methods>
+					<exclude name="registerUser" />
+					<exclude name="signUp" />
+					<include name="purchase" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
+  
+	<test name="NewUser">
+		<classes>
+			<class name="testscripts.RegisterNewUser">
+				<methods>
+					<exclude name="registerUser" />
+
+				</methods>
+			</class>
+
+			<class name="testscripts.UserSignUp">
+				<methods>
+					<exclude name="signUp" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="OldUser">
+		<classes>
+			<class name="testscripts.UserSignUp">
+				<methods>
+					<exclude name="signUp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+-->
+	
+	
+			<class name="testscripts.PurchaseComputer">
+				<methods>
+					<exclude name="purchase" />
+
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite>

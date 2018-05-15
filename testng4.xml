@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="project">
+	<test name="NewUsers">
+		<classes>
+			
+			<class name="testscripts.ShoppingSite">
+			</class>
+			<class name="testscripts.RegisterNewUser">
+				<methods>
+					<include name="registerSingleUser" />
+
+				</methods>
+			</class>
+
+			<class name="testscripts.UserSignUp">
+				<methods>
+					<include name="signUp" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	</suite>
